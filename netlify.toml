@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+  base = "frontend"
+
+[build.environment]
+  NODE_VERSION = "20"
+  REACT_APP_API_BASE_URL = "https://mockmate-backend.onrender.com" # Replace with your actual Render URL later
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
